@@ -5,48 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/LogoSVG_colored.svg">
     <title>PPE info</title>
 </head>
 
 <body>
     <header>
-        <img src="logo_WIP.png">
-        <h1>sup</h1>
+        <img class="header-logo" src="assets/LogoSVG_colored.svg">
+        <h1>Personal Planning Environment</h1>
     </header>
 
-    <div class="body">
-        <div class="banner">
-            <p class="tagline"></p>
-        </div>
+    <main>
+        <section class="banner">
+            <div class="tagline-wrapper">
+                <p class="tagline">Take your planning personally</p>
+            </div>
+        </section>
 
-        <div class="artilces">
+        <section class="artilces">
             <article>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere alias dolorem ipsa perspiciatis
-                    delectus
-                    quas minus porro odit, nemo ad labore fugiat optio repellendus est perferendis quod! Placeat, autem
-                    perspiciatis.</p>
+                <h2 class="article-title">What is PPE?</h2>
+                <p>Personal Planning Environment (PPE for short) is a tool made to more comprehensively understand the
+                    information in curricula. The way it works is that you can upload the digital form online to the
+                    tool and in turn it will put everything in a comprehensive list. If deadlines and prerequisites are
+                    mentioned in the curriculum it will also take those into account and sort it in order from most
+                    urgent to least urgent.</p>
+                <p>Everything that’s uploaded will be sorted into periods and classes so it can easily be revisited at a
+                    later date, this is to make sure students can use PPE for multiple different subjects at once.</p>
             </article>
             <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maiores id accusantium itaque hic
-                    sunt
-                    nam laboriosam architecto magnam, dolorem illo quo aspernatur esse laudantium! Quam molestiae ipsum
-                    porro dignissimos?</p>
+                <h2 class="article-title">Why was PPE made?</h2>
+                <p>The idea of PPE came to me out of a personal “itch” against complicated curricula and the confusion
+                    they bring with them. This is a feeling many other students share, mostly students with learning
+                    disabilities like myself.</p>
+                <p>I’ve visited multiple different schools in different parts of the academic journey, from high school
+                    trough university and have spoken with the students. I’ve concluded that around 80% of students
+                    don’t fully read or understand their curricula and have close calls or stressful experiences due to
+                    this. Most of these students have some sort of learning disability like dyslexia, ADHD or a visual
+                    impairment. The goal of PPE is to help not only these students but every student manage their tasks
+                    better and give them a clearer idea of what is expected of them.</p>
             </article>
             <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa, in optio unde quo at corporis
-                    cum
-                    nisi iste id mollitia minima dolorum reprehenderit nemo aspernatur, repellendus deserunt, excepturi
-                    aperiam.</p>
+                <h2 class="article-title">How is PPE made?</h2>
+                <p>This project can be divided into three different parts, front-end, back-end and server hosting (since
+                    I’m doing that myself). I’ve done research and I’ve come to the following development stack.</p>
+                <h3>Front-end:</h3>
+                <p>For the front-end I’m using React and Material UI. I’ve chosen React since its one of the more well
+                    documented and reliable frameworks used for creating web applications. Material UI is a component
+                    library specifically made for React with it’s main selling point being that its components follow
+                    Google’s material design philosophy making it look like an application from the get go.</p>
+                <h3>Back-end:</h3>
+                <p>For the back-end I’m using Next.js, MongoDB and Google GenAI. Next.js is a server side runtime
+                    environment built on Node.js which was made for React development, which is a perfect fit for the
+                    front-end and because of its current relevancy. MongoDB is a formless database which was chosen for
+                    its ease of use. Lastly Google GenAI is what reads and writes to the user, it was chosen for its
+                    performance when dissecting documents, and its response time.</p>
+                <h3>Server hosting:</h3>
+                <p>PPE (and this site) are run on my personal VPS. This VPS runs on the Linux distro Ubuntu, which has
+                    been the default for some time and is well documented. For webhosting specifically I use nginx for
+                    its documentation and its flexibility.</p>
             </article>
-        </div>
-    </div>
+        </section>
+    </main>
     <footer>
         <div class="logo-wrapper">
-
+            <img class="hr-logo footer-logo" src="assets/hogeschool-rotterdam.svg">
+            <img class="ppe-logo footer-logo" src="assets/LogoSVG_colored.svg">
         </div>
         <div class="link-wrapper">
-            <a href="https://github.com/dvrossen" target="_blank">D van Rossen GitHub</a><a
-                href="https://www.rotterdamuas.com/about/">Rotterdam University of Applied Science</a>
+            <a href="/">My website</a>
+            <a href="https://github.com/dvrossen" target="_blank">My GitHub</a>
+            <a href="https://www.rotterdamuas.com/about/" target="_blank">Rotterdam University of Applied Science</a>
         </div>
     </footer>
 
